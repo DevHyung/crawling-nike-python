@@ -7,7 +7,7 @@ if __name__=="__main__":
     for file in fileList:
         try:
             if '(바탕)' in file:
-                shutil.move(os.getcwd()+file,os.getcwd()+file.split('(바탕)')[0]+file)
+                shutil.move(os.getcwd()+'\\'+file,os.getcwd()+'\\'+file.split('(바탕)')[0]+'\\'+file)
         except:
             print("확인필요 >>> ",file)
     print(">>> 파일 이동완료 !!!")
